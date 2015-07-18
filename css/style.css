@@ -358,6 +358,10 @@ header .carousel-indicators li {
 	font-weight: 400;
 }
 
+.features p.lead {
+  font-size: 22px;
+}
+
 .features h2{
 	color: #ffffff;
 	text-transform: uppercase;
