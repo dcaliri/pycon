@@ -230,6 +230,11 @@ header .carousel-indicators li {
 .venue {
   background: #4687B0;	
 }
+.sponsors {
+  background: #FED359;	
+  padding-bottom: 20px;
+}
+
 
 .venue p.lead {
   font-size: 22px;
