@@ -397,6 +397,7 @@ header .carousel-indicators li {
 
 .features p {
   font-weight: 400;
+  font-size: 15px;
 }
 
 .venue p {
@@ -413,6 +414,11 @@ header .carousel-indicators li {
   font-weight: 300;
 }
 
+.features a {
+  color: white !important;
+  text-decoration: none;
+}
+
 .features .circle{
   box-sizing: border-box;
   margin-right: auto;
@@ -423,7 +429,11 @@ header .carousel-indicators li {
   border: 2px solid #ffffff;
   border-radius: 100%;
   text-align: center;
-
+  overflow: hidden;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  background-size: cover;
 }
 
 .features span.glyphicon, .features i{
@@ -694,4 +704,40 @@ header .carousel-indicators li {
     background-size: 98%;
     color: white;
   }
+}
+
+.fisa {
+	background: url(../img/speakers/Fisa.png) no-repeat;
+}
+
+.deza {
+	background: url(../img/speakers/AlfredoDeza.jpg) no-repeat;
+}
+
+.ramirez {
+  background: url(../img/speakers/DiegoRamirez.jpg) no-repeat;
+}
+
+.masanori {
+  background: url(../img/speakers/FernandoMasanori.png) no-repeat;
+}
+
+.vinicius {
+  background: url(../img/speakers/Vinicius.jpeg) no-repeat;
+}
+
+.sorianello {
+  background: url(../img/speakers/Sorianello.jpg) no-repeat;
+}
+
+.victoria {
+  background: url(../img/speakers/victoria.jpeg) no-repeat;
+}
+
+.emiliano {
+  background: url(../img/speakers/Emiliano.jpg) no-repeat;
+}
+
+.ashwini {
+  background: url(../img/speakers/ashwini.png) no-repeat;
 }
