@@ -235,6 +235,10 @@ header .carousel-indicators li {
   padding-bottom: 20px;
 }
 
+.purchase h2 {
+  margin-top: 50px;
+}
+
 
 .venue p.lead {
   font-size: 22px;
@@ -430,6 +434,24 @@ header .carousel-indicators li {
   border-radius: 100%;
   text-align: center;
   overflow: hidden;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  background-size: cover;
+}
+
+.features .small_circle{
+  box-sizing: border-box;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 33px;
+  width: 150px;
+  height: 150px;
+  border: 2px solid #ffffff;
+  border-radius: 100%;
+  text-align: center;
+  overflow: hidden;
+  display: inline-block;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -ms-background-size: cover;
