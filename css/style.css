@@ -445,17 +445,20 @@ header .carousel-indicators li {
   margin-right: auto;
   margin-left: auto;
   padding-top: 33px;
-  width: 150px;
-  height: 150px;
+  width: 80px;
+  height: 80px;
   border: 2px solid #ffffff;
   border-radius: 100%;
   text-align: center;
   overflow: hidden;
-  display: inline-block;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -ms-background-size: cover;
   background-size: cover;
+}
+
+.features .inline {
+  display: inline-block;
 }
 
 .features span.glyphicon, .features i{
@@ -834,4 +837,12 @@ header .carousel-indicators li {
 
 .marcos {
   background: url(../img/speakers/marcos.jpg) no-repeat;
+}
+
+.diego {
+  background: url(../img/diego.png) no-repeat;
+}
+
+.emilio {
+  background: url(../img/emilio.png) no-repeat;
 }

@@ -48,7 +48,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
       <div class="container">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-          <span class="sr-only">Toggle navigation</span>
+          <span class="sr-only"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
@@ -56,7 +56,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
         
         <!--Replace text with your app name or logo image-->
         <!--<img src='img/python_logo.png' class='nav-logo'>-->
-        <a class="navbar-brand" href="#">PyCon Argentina</a>
+        <a class="navbar-brand" href="#">PyConAr</a>
         
       </div>
       <div class="collapse navbar-collapse navbar-ex1-collapse">
@@ -65,8 +65,9 @@ google.maps.event.addDomListener(window, 'load', initialize);
           <li><a onclick="$('#speakers').animatescroll({padding:71});">Speakers</a></li>
           <li><a onclick="$('#venue').animatescroll({padding:71});">Donde?</a></li>
           <li><a onclick="$('#hotels').animatescroll({padding:71});">Alojamiento</a></li>
-          <li><a onclick="$('#conduct').animatescroll({padding:71});">Código de conducta</a></li>
+          <li><a onclick="$('#conduct').animatescroll({padding:71});">Conducta</a></li>
           <li><a onclick="$('#sponsors').animatescroll({padding:71});">Sponsors</a></li>
+          <li><a onclick="$('#contact_us').animatescroll({padding:71});">Contacto</a></li>
         </ul>
       </div>
     </div>
@@ -271,8 +272,8 @@ google.maps.event.addDomListener(window, 'load', initialize);
       </div>
 
       <div class="col-md-4">
-        <div class="sorianello small_circle"> </div>
-        <div class="facundo small_circle"> </div>
+        <div class="sorianello circle inline"> </div>
+        <div class="facundo circle inline"> </div>
         <h2><a href="https://www.twitter.com/_joac" target='blank'>Joaquín Sorianello</a> & <a href="https://www.twitter.com/facundobatista" target='blank'>Facundo Batista</a></h2>
         <h4>No es magia: descriptores al desnudo</h4>
         <p>Python es un un lenguaje que se destaca por la flexibilidad para customizar el comportamiento de los objetos. Partiremos de un caso de estudio y explicaremos en detalle la API de descriptores de python, para poder comprender su funcionamiento y comportamiento, para poder así aprovecharlos al máximo a la hora de desarrollar. No apta para personas poco curiosas</p>
@@ -526,11 +527,38 @@ google.maps.event.addDomListener(window, 'load', initialize);
   </div>
 </section>
 
-<section class="features">
+<section id="contact_us" class="features">
   <div class="container">
-    <h5>Organiza:</h5> <a href="http://python.org.ar" target='blank'>Python Argentina</a>
-    <h5>Contacto:</h5> <a href='mailto:diegocaliri@gmail.com'>Diego Caliri</a> y <a href='mailto:miloops@gmail.com'>Emilio Tagua</a>
+    <div class="row">
+      <h5>Organiza</h5> 
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"></div>
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+        <a href="http://python.org.ar" target='blank'>
+          <img src="img/Pyar_logo.png" class='img-responsive'/>
+        </a>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"></div>
     </div>
+    <div class="row">
+      <h5>Contacto</h5> 
+      <div class='row'>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"></div>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+          <a href='mailto:diegocaliri@gmail.com'>
+            <p>Diego Caliri</p>
+            <div class="diego small_circle"></div>
+          </a> 
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+          <a href='mailto:miloops@gmail.com'>
+            <p>Emilio Tagua</p>
+            <div class="emilio small_circle"></div>
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"></div>
+      </div>
+    </div>
+  </div>
 </section>
 
 
