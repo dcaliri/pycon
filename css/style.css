@@ -471,6 +471,23 @@ header .carousel-indicators li {
 /*	SOCIAL
 /*-----------------------------------------------------------------------------------*/
 
+
+.agenda{
+  padding: 30px;
+}
+
+.speaker{
+  font-style: italic;
+  color:#7A7E80;
+  font-size: 0.8em;
+}
+
+.speaker2{
+  font-style: italic;
+  color:#FFFFFF;
+  font-size: 0.8em;
+}
+
 .social{
   overflow: hidden;
   padding: 80px 0px 150px 0px;

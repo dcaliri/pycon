@@ -40,6 +40,7 @@ function initialize() {
   });
 }
 google.maps.event.addDomListener(window, 'load', initialize);
+
 </script>
 </head>
 <body>
@@ -65,6 +66,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
           <li><a onclick="$('#speakers').animatescroll({padding:71});">Speakers</a></li>
           <li><a onclick="$('#venue').animatescroll({padding:71});">Donde?</a></li>
           <li><a onclick="$('#hotels').animatescroll({padding:71});">Alojamiento</a></li>
+          <li><a onclick="$('#agenda').animatescroll({padding:71});">Agenda</a></li>
           <li><a onclick="$('#conduct').animatescroll({padding:71});">Conducta</a></li>
           <li><a onclick="$('#sponsors').animatescroll({padding:71});">Sponsors</a></li>
           <li><a onclick="$('#contact_us').animatescroll({padding:71});">Contacto</a></li>
@@ -151,7 +153,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
       </div>
 
       <div class="col-md-4">
-        <div class="masanori circle">
+        <div class="masanori circle" id='pythonparainiciantes'>
         </div>
         <h2><a href="https://www.twitter.com/fmasanori" target='blank'>Fernando Masanori</a></h2>
         <h4>Python para iniciantes</h4>
@@ -170,7 +172,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
       <div class="col-md-4">
         <div class="linuxchi circle inline"> </div>
-        <div class="argentinaenpython circle inline"> </div>
+        <div class="argentinaenpython circle inline" id='djangogirls'> </div>
         <h2><a href="https://www.twitter.com/linuxchixar" target='blank'>LinuxChiXAr</a> & <a href="https://www.twitter.com/argenpython" target='blank'>Argentina en Python</a></h2>
         <h4>DjangoGirls Tutorial</h4>
         <p>DjangoGirls es una organización sin fines de lucro que tiene como objetivo animar a que más mujeres se involucren con la tecnología y aumentar la diversidad en la comunidad de Django. Para esto proveen herramientas, recursos y soporte para organizar talleres de programación de un día para que participantes sin conocimientos previos de programación puedan construir su primera aplicación web, usando Python, Django, HTML y CSS. Un taller típico admite entre 30 y 40 participantes, que trabajarán en equipos de tres personas y un tutor.</p>
@@ -413,6 +415,176 @@ google.maps.event.addDomListener(window, 'load', initialize);
       <p>Para reservas exclusivas del evento contactarse con Rodolfo Zamperoni a <a href="mailto:gerencia@damajuanahostel.com.ar">gerencia@damajuanahostel.com.ar</a></p>
     </div>
 
+  </div>
+</section>
+
+<section class="purchase">
+  <div id="agenda" class="row agenda">
+    <h1>Agenda</h1>
+    <h2>Jueves</h1>
+    <p class='lead'> El taller de <a href='#djangogirls'>Django Girls</a> y de <a href='#pythonparainiciantes'>Python para iniciantes</a> se desarrollarán este día. Detalles de los horarios y salas a definir pronto.</p>
+    <h2>Viernes</h1>
+    <div class="table-responsive">
+      <table class="table"> 
+        <tr>
+          <th colspan="2" style="text-align:center">Hora</th>
+          <th style="text-align:center" bgcolor='#FED359'>Track 1</th>
+          <th style="text-align:center" bgcolor='#4687B0'>Track 2</th>
+        </tr>
+        <tr>
+          <td align"center">8:00</td>
+          <td align"center">8:50</td>
+          <td colspan="2" align="center">Acreditacion</td>
+        </tr>
+        <tr>
+          <td align"center">9:00</td>
+          <td align"center">9:45</td>
+          <td align="center" bgcolor='#FED359'>Introducción a Django<br/><span class="speaker">Juan Pedro Fisanotti</span></td>
+          <td align="center" bgcolor='#4687B0'>Practical OpenCV<br/><span class="speaker2">Diego Ramirez</span></td>
+        </tr>
+        <tr>
+          <td align"center">9:55</td>
+          <td align"center">10:40</td>
+          <td align="center" bgcolor='#FED359'>Encantando PythonES para masticar data<br/><span class="speaker">Juanjo Ciarlante</span></td>
+          <td align="center" bgcolor='#4687B0'>Allspeak: Internacionalización pytónica inspirada en Rails<br/><span class="speaker2">Juan Pablo Scaletti</span></td>
+        </tr>
+        <tr>
+          <td align"center">10:40</td>
+          <td align"center">11:10</td>
+          <td colspan="2" align="center">Coffee Break</td>
+        </tr>
+        <tr>
+          <td align"center">11:10</td>
+          <td align"center">11:55</td>
+          <td align="center" bgcolor='#FED359'>Programación asincrónica en Python 3: el futuro ya llegó<br/><span class="speaker">Facundo Batista</span></td>
+          <td align="center" bgcolor='#4687B0'>Appium para Pythonistas<br/><span class="speaker2">Pamela Prosperi</span></td>
+        </tr>
+        <tr>
+          <td align"center">12:05</td>
+          <td align"center">12:50</td>
+          <td align="center" bgcolor='#FED359'>Django ORM at Scale!<br/><span class="speaker">Martín Alderete</span></td>
+          <td align="center" bgcolor='#4687B0'>Cualquiera puede programar: construyendo la estrella de la muerte con legos<br/><span class="speaker2">Roberto Alsina</span></td>
+        </tr>
+        <tr>
+          <td align"center">12:50</td>
+          <td align"center">13:50</td>
+          <td colspan="2" align="center">Almuerzo</td>
+        </tr>
+        <tr>
+          <td align"center">13:50</td>
+          <td align"center">14:35</td>
+          <td align="center" bgcolor='#FED359'>De socket a asyncio en 45 minutos<br/><span class="speaker">Marcos Dione</span></td>
+          <td align="center" bgcolor='#4687B0'>Wachipistola Python Package Maintainer<br/><span class="speaker2">Felipe Lerena</span></td>
+        </tr>
+        <tr>
+          <td align"center">14:45</td>
+          <td align"center">15:30</td>
+          <td align="center" bgcolor='#FED359'>Django REST Framework en profundidad<br/><span class="speaker">Michael Cetrulo</span></td>
+          <td align="center" bgcolor='#4687B0'>Asi que tu piensas que puedes PDBear?!<br/><span class="speaker2">Emiliano Dalla Verde Marcozzi</span></td>
+        </tr>
+        <tr>
+          <td align"center">15:30</td>
+          <td align"center">16:00</td>
+          <td colspan="2" align="center">Coffee Break</td>
+        </tr>
+        <tr>
+          <td align"center">16:00</td>
+          <td align"center">16:50</td>
+          <td colspan="2" align="center" bgcolor='#FED359'>Lightning talks</td>
+        </tr>
+        <tr>
+          <td align"center">17:00</td>
+          <td align"center">17:50</td>
+          <td colspan="2" align="center" bgcolor='#FED359'>El futuro de Python: El poder a la comunidad<br/><span class="speaker">Ashwini Oruganti</span></td>
+        </tr>
+        <tr>
+          <td align"center">17:50</td>
+          <td align"center">18:00</td>
+          <td colspan="2" align="center" bgcolor='#FED359'>Cierre</td>
+        </tr>
+      </table>
+    </div>
+    <h2>Sábado</h1>
+    <div class="table-responsive">
+      <table class="table"> 
+        <tr>
+          <th colspan="2" style="text-align:center">Hora</th>
+          <th style="text-align:center" bgcolor='#FED359'>Track 1</th>
+          <th style="text-align:center" bgcolor='#4687B0'>Track 2</th>
+        </tr>
+        <tr>
+          <td align"center">8:00</td>
+          <td align"center">8:50</td>
+          <td colspan="2" align="center">Acreditacion</td>
+        </tr>
+        <tr>
+          <td align"center">9:00</td>
+          <td align"center">9:45</td>
+          <td align="center" bgcolor='#FED359'>El desarrollador imperfecto: una guía para reivindicarse<br/><span class="speaker">Alfredo Deza</span></td>
+          <td align="center" bgcolor='#4687B0'>Obteniendo respuestas en milisegundos<br/><span class="speaker2">Claudio Daniel Freire</span></td>
+        </tr>
+        <tr>
+          <td align"center">9:55</td>
+          <td align"center">10:40</td>
+          <td align="center" bgcolor='#FED359'>No es magia: descriptores al desnudo<br/><span class="speaker">Joaquín Sorianello & Facundo Batista</span></td>
+          <td align="center" bgcolor='#4687B0'>Paralelismo y concurrencia practica en Python<br/><span class="speaker2">Michael Cetrulo</span></td>
+        </tr>
+        <tr>
+          <td align"center">10:40</td>
+          <td align"center">11:10</td>
+          <td colspan="2" align="center">Coffee Break</td>
+        </tr>
+        <tr>
+          <td align"center">11:10</td>
+          <td align"center">11:55</td>
+          <td align="center" bgcolor='#FED359'>Es posible detectar las excepciones de un codigo python?<br/><span class="speaker">Davil Weil</span></td>
+          <td align="center" bgcolor='#4687B0'>Prácticas modernas para el desarrollo de aplicaciones web<br/><span class="speaker2">Ricardo Kirkner</span></td>
+        </tr>
+        <tr>
+          <td align"center">12:05</td>
+          <td align"center">12:50</td>
+          <td align="center" bgcolor='#FED359'>Patrones de diseño en Python<br/><span class="speaker">Vinicius Pacheco</span></td>
+          <td align="center" bgcolor='#4687B0'>Introducción práctica a Machine Learning con scikit-learns<br/><span class="speaker2">Mariano Falcón</span></td>
+        </tr>
+        <tr>
+          <td align"center">12:50</td>
+          <td align"center">13:50</td>
+          <td colspan="2" align="center">Almuerzo</td>
+        </tr>
+        <tr>
+          <td align"center">13:50</td>
+          <td align"center">14:35</td>
+          <td align="center" bgcolor='#FED359'>Python meets Selenium: automatizando al usuario<br/><span class="speaker">Julieta Valentin</span></td>
+          <td align="center" bgcolor='#4687B0'>Tu primera aplicación con kivy para móviles<br/><span class="speaker2">Sofia Martín</span></td>
+        </tr>
+        <tr>
+          <td align"center">14:45</td>
+          <td align"center">15:30</td>
+          <td align="center" bgcolor='#FED359'>Rompiendo la compatibilidad hacia atrás: El camino fácil<br/><span class="speaker">Flavio Percoco</span></td>
+          <td align="center" bgcolor='#4687B0'>Cacheando fuera de Django<br/><span class="speaker2">Guillermo Narvaja</span></td>
+        </tr>
+        <tr>
+          <td align"center">15:30</td>
+          <td align"center">16:00</td>
+          <td colspan="2" align="center">Coffee Break</td>
+        </tr>
+        <tr>
+          <td align"center">16:00</td>
+          <td align"center">16:40</td>
+          <td colspan="2" align="center" bgcolor='#FED359'>Lightning talks</td>
+        </tr>
+        <tr>
+          <td align"center">16:50</td>
+          <td align"center">17:40</td>
+          <td colspan="2" align="center" bgcolor='#FED359'>Migrando a microservicios en Eventbrite<br/><span class="speaker">Simon Willison</span></td>
+        </tr>
+        <tr>
+          <td align"center">17:40</td>
+          <td align"center">18:00</td>
+          <td colspan="2" align="center" bgcolor='#FED359'>Sorteos y Cierre</td>
+        </tr>
+      </table>
+    </div>
   </div>
 </section>
 
