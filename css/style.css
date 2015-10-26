@@ -163,7 +163,7 @@ nav.navbar.fixed-to-top{
 header{
   padding: 50px 0px 0px 0px;
   height: 460px;
-  background: url('../img/mendoza.jpg');
+  background: url('../img/cover-site-para-texto.png');
   background-color: white!important;
   background-size: cover;
   background-repeat: no-repeat;
@@ -599,13 +599,6 @@ header .carousel-indicators li {
   .navbar-nav {
     float: left;
     text-align: left;
-  }
-
-  .logo{
-    display: block;
-    margin: auto;
-    width: 100px;
-    height: 100px;
   }
 
   .leparc{
